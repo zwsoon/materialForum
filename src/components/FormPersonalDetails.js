@@ -5,15 +5,17 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
 export class FormPersonalDetails extends Component {
+    //lets the user go to the next page
     continue = e =>{
         e.preventDefault();
+        // Process Form //
         this.props.nextStep();
-    }
-
+    };
+    // lets the user go the previous page
     back = e =>{
         e.preventDefault();
         this.props.prevStep();
-    }
+    };
 
     render() {
         // use values as a variable
@@ -53,19 +55,20 @@ export class FormPersonalDetails extends Component {
                    />
                    <br/>
                    <RaisedButton
-                        label = "Continue"
-                        primary = {true}
-                        // calls the style method below
-                        style = {styles.button}
-                        onClick = {this.continue}
-                   />
-                   <RaisedButton
                         label = "Back"
-                        primary = {false}
+                        primary = {false} //sets the color to white
                         // calls the style method below
                         style = {styles.button}
                         onClick = {this.back}
                    />
+                   <RaisedButton
+                        label = "Continue"
+                        primary = {true} //sets the color to blue
+                        // calls the style method below
+                        style = {styles.button}
+                        onClick = {this.continue}
+                   />
+                   
                </React.Fragment>
             </MuiThemeProvider>
         );

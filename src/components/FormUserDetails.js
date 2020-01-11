@@ -14,7 +14,8 @@ export class FormUserDetails extends Component {
         const {values, handleChange}=this.props;
         return (
             <MuiThemeProvider>
-               <React.Fragment>
+                {/*React.Fragment acts like a fake DOM*/}
+               <React.Fragment>  
                    <AppBar title="Enter User Details" />
                    <TextField
                         hintText = "Enter Your First Name"
@@ -47,8 +48,8 @@ export class FormUserDetails extends Component {
                    />
                    <br/>
                    <RaisedButton
-                        label = "Continue"
-                        primary = {true}
+                        label = "Continue" //text that is displayed
+                        primary = {true} //sets the color to Blue - false: white
                         // calls the style method below
                         style = {styles.button}
                         // calls the continue method above which will call the nextStep method from UserForm and increase the state +1 
