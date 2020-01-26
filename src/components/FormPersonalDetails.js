@@ -28,7 +28,7 @@ export class FormPersonalDetails extends Component {
                         hintText = "Enter Your Occupation"
                         floatingLabelText = "Occupation"
                         onChange = {
-                            // call in the handleChange method from UserForm and we pass in firstName
+                            // call in the handleChange method from UserForm and we pass in
                             handleChange('occupation')
                         }
                         defaultValue = {values.occupation}
@@ -38,7 +38,7 @@ export class FormPersonalDetails extends Component {
                         hintText = "Enter Your City"
                         floatingLabelText = "City Name"
                         onChange = {
-                            // call in the handleChange method from UserForm and we pass in firstName
+                            // call in the handleChange method from UserForm and we pass in
                             handleChange('city')
                         }
                         defaultValue = {values.city}
@@ -48,7 +48,7 @@ export class FormPersonalDetails extends Component {
                         hintText = "Enter Your Bio"
                         floatingLabelText = "Bio"
                         onChange = {
-                            // call in the handleChange method from UserForm and we pass in firstName
+                            // call in the handleChange method from UserForm and we pass in
                             handleChange('bio')
                         }
                         defaultValue = {values.bio}

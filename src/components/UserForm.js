@@ -3,6 +3,8 @@ import FormUserDetails from './FormUserDetails';
 import FormPersonalDetails from './FormPersonalDetails';
 import Confirm from './Confirm';
 import Success from './Success';
+
+
 export class UserForm extends Component {
 
     //When the user types anything in on the UI
@@ -53,7 +55,7 @@ export class UserForm extends Component {
             case 1: 
                 return(
                 <FormUserDetails //calls the FormUserDetailsClass
-                    //calls nextstep and increases the step by 1
+                    //these are the "properties" called in the FormUserDetails class
                     nextStep = {this.nextStep}  //allows the user to go forward        
                     handleChange = {this.handleChange}
                     values = {values}//values in render()
@@ -62,7 +64,7 @@ export class UserForm extends Component {
             case 2:
                 return(
                     <FormPersonalDetails //calls the FormPersonalDetailsClass
-                        //calls nextstep and increases the step by 1
+                        //these are the "properties" called in the FormPersonalDetails class
                         nextStep = {this.nextStep} //allows the user to go forward 
                         prevStep = {this.prevStep} //allows the user to go backwards
                         handleChange = {this.handleChange}
@@ -72,7 +74,7 @@ export class UserForm extends Component {
             case 3:
                 return(
                     <Confirm //calls the FormPersonalDetailsClass
-                        //calls nextstep and increases the step by 1
+                        //these are the "properties" called in the FormPersonalDetails class
                         nextStep = {this.nextStep} //allows the user to go forward 
                         prevStep = {this.prevStep} //allows the user to go backwards
                         values = {values}
